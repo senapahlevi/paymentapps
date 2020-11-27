@@ -2,8 +2,121 @@ import {StyleSheet} from 'react-native';
 import Constants from 'expo-constants';
 
 const styles = StyleSheet.create({
-    statusBar:{
-        height: Constants.statusBarHeight
+    buttonPrimary:{
+        backgroundColor:"#4982C1",
+        marginTop:8,
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:2,
+        height:48,
+        marginHorizontal:21        
+    },    
+    textInputPrimary:{
+        marginTop:8,
+        marginHorizontal:21,
+        height:48,
+        borderWidth:1,
+        borderColor:"#C3C3C3"
+    },
+    containerImage:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"flex-end",
+        padding:16
+    },
+    BottomNaviggator:{
+        paddingBottom:Constants.statusBarHeight,
+    },
+    textTopUpHeader:{
+        textAlign:"center",
+        fontSize:24,
+        marginTop:6        
+    },
+    cardText:{
+        fontSize:18,
+        fontWeight:'400',
+        color:"#FFFFFF",
+        marginVertical:6,
+        textAlign:"center"        
+    },      
+    card:{
+        marginTop:6,
+        backgroundColor:"#4982C1",
+        width:280,
+        alignSelf:"center",
+        paddingVertical:6
+    },
+    containerContent:{
+        flex:2,
+        alignItems:"stretch",
+        justifyContent:"flex-start",
+    },
+    containerHeader:{
+        flex:2,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    containerTransaksiItem:{
+        flex:1,
+        flexDirection:"row",        
+        height:80,     
+        marginTop:8,                                           
+        borderRadius:2,                
+        borderStyle: "solid",
+        borderWidth:1,
+        backgroundColor:'#FFF'
+    },
+    IconTransaksiItem:{
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center"        
+    },
+    ContentTransaksiItem:{
+        flex:3,
+        padding:6        
+    },
+    DateTransaksiItem:{
+        flex:2,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    textPrimary:{
+        fontSize:18,
+        fontWeight:'400',
+        color:"#FFFFFF",
+        marginTop:8
+    },
+    containerProfile:{
+        width:120,
+        height:120,
+        borderRadius:120/2,
+        backgroundColor:"white"        
+    },
+    container_profile:{
+        flex:3,
+        backgroundColor:"#005690",
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    buttonContainer:{                        
+        padding:8,
+        flex:1, 
+        padding:10,
+        alignItems: 'center',               
+    },
+    buttonIcon:{
+        height:50,
+        width:50,        
+        backgroundColor:"white",
+        flexDirection:"row",
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:10                                        
+    },
+    buttonText:{
+        color:"#FFFFFF",
+        fontSize:12,
+        fontWeight:"500"
     },
     title_brand:{
         fontSize:20,
@@ -29,10 +142,9 @@ const styles = StyleSheet.create({
     },
     container:{
         flex:1,
-        alignItems:'stretch',
         justifyContent:'center',
         padding:8,
-        marginTop:Constants.statusBarHeight,
+        paddingTop: Constants.statusBarHeight,
         marginBottom:Constants.statusBarHeight,
     },
     container_home:{

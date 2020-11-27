@@ -5,8 +5,9 @@ import 'react-native-gesture-handler';
 import styles from './Styles';
 import { useNavigation } from '@react-navigation/native';
 
+
 const RegisterScreen=()=>{
-   // const navigation = useNavigation();
+    const navigation = useNavigation();
     return (
         <View style = {styles.container}>
             <Text style = {styles.title_brand}>
@@ -25,13 +26,12 @@ const RegisterScreen=()=>{
             placeholder= "No handphone"/>
 
             <Button
-                title="Submit"
+                title="Register"
                 onPress = {() =>
-                    console.log("dor submit")
-                    //navigation.navigate('login')
+                        navigation.navigate('Login') 
                 }
             />
-                </View>
+        </View>
     );
 };
 export default RegisterScreen;

@@ -8,19 +8,24 @@ import { FlatList } from 'react-native-gesture-handler';
 
 import PersonalLayout from './components/PersonalScreen';
 import LoginScreen from './components/LoginScreen';
-import HomeLayout from './layout/HomeLayout';
-//import RegisterScreen from './components/RegisterScreen';
+import RegisterScreen from './components/RegisterScreen';
 
-export default function App() {
-  return (
+import {MainStackMenu} from '../telkomdti2020/components/MainStackMenu';
+import styles from './components/Styles';
+
+
+const App = () => {  return (
  /*
-<NavigationContainer>
- <MainPayment/>
+<NavigationContainer><MainPayment/>
   </NavigationContainer>
+  <LoginScreen/>
+      */
+   <NavigationContainer>
+      <MainStackMenu/>
+   </NavigationContainer>
 
-   */
-        <LoginScreen/>
- 
 
-);
+
+   );
 }
+export default App;

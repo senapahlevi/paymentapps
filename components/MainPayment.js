@@ -2,16 +2,18 @@ import * as React from 'react';
 import { Text, View,SafeAreaView } from 'react-native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Constant from 'expo-constants';
 
 import HomeScreen from './HomeScreen';
 import TransactionScreen from './TransactionScreen';
-import PersonalScreen from './PersonalScreen'
-import HomeLayout from '../layout/HomeLayout';
-
+import PersonalScreen from './PersonalScreen';
+import styles from './Styles';
 const Tab = createMaterialBottomTabNavigator();
 
-function PaymentScreen() {
+function BottomMenu() {
   return(
+  
     <Tab.Navigator 
       initialRouteName = "Home"
       activeColor = "#0dd698"
@@ -20,7 +22,7 @@ function PaymentScreen() {
       >
     <Tab.Screen 
       name="Home"
-      component = {HomeLayout}
+      component = {HomeScreen}
       options = {{
         tabBarLabel :'Home',
         tabBarIcon :({color})=> (
@@ -52,4 +54,4 @@ function PaymentScreen() {
   );
 }
 
-export default PaymentScreen;
+export default BottomMenu;

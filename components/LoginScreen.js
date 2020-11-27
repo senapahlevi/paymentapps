@@ -3,14 +3,15 @@ import 'react-native-gesture-handler';
 
 import * as React from 'react';
 import {Button,Text, View} from 'react-native';
-//import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import { TextInput } from 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 
 import styles from './Styles';
 
 
 function LoginScreen() {
-  //const navigation = useNavigation();
+  const navigation = useNavigation();
   return (
     <View style = {styles.container}>
     <Text style = {styles.title_brand}>
@@ -27,14 +28,14 @@ function LoginScreen() {
     <Button
     style = {styles.button}
     title = "Login"
-    onPress={() => {
-      console.log('You tapped the button!');
-    }}
+    onPress={() => 
+      navigation.navigate('Home')
+    }
     />
     <Text
-   onPress={() => {
-    console.log('You tapped the button!');
-  }}
+   onPress={() => 
+      navigation.navigate('Register')}
+  
     style = {styles.link_register}>Register</Text>
 
 </View>

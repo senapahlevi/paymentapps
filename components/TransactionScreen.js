@@ -1,23 +1,26 @@
 import * as React from 'react';
-import { Text, View,StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { Text, View,StyleSheet,FlatList } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
+import Datas from './Data';
+import styles from './Styles';
+import Komponent from '../layout/Komponent';
 
-function TransactionScreen() {
-  return(
-    <View style = {styles.icons}>
+const TransactionScreen = () =>{
+return (
+    <View style = {styles.container_home}>
+      <View style = {styles.container_menu}>
+        <View>
+          <FlatList
+            data = {Datas.dataTransferr}
+            renderItem = {Komponent.renderItem}/>
+        </View>
+      </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  icons:{
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center',
-    },
-});
+
 
 export default TransactionScreen;

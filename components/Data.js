@@ -1,25 +1,53 @@
+const dataTransferr = [
+  {
+    id: '1',
+    price: '80000',
+    account:'08474884784',
+    date:'20/08/2020',
+  },
+  {
+      id: '2',
+      price: '9000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    },
+    {
+      id: '3',
+      price: '1000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    } , 
+    {
+      id: '4',
+      price: '1000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    } ,
+    {
+      id: '5',
+      price: '1000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    } ,
+    {
+      id: '6',
+      price: '1000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    } ,
+    {
+      id: '7',
+      price: '1000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    } ,
+    {
+      id: '8',
+      price: '1000000',
+      account:'08474884784',
+      date:'20/08/2020',
+    },   
+];
 
-import React from 'react';
-import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar } from 'react-native';
 
-const Item = ({ title }) => (
-    <View>
-      <Text>{title}</Text>
-    </View>
-  );
-  
-const DATA = [
-    {
-      id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-      title: "First Item",
-    },
-    {
-      id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-      title: "Second Item",
-    },
-    {
-      id: "58694a0f-3da1-471f-bd96-145571e29d72",
-      title: "Third Item",
-    },
-  ];
-export default {Data};  
+export default {dataTransferr}
