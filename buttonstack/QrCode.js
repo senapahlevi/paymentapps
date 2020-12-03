@@ -10,7 +10,7 @@ import Komponent from '../layout/Komponent';
 
 const QrCode = ()=> {
   const navigation = useNavigation();
-  const [hasPermission, setHasPermission] = useState(null);
+  const [hasPermission, setHasPermission] = useState(null);//konsep hooks 
   const [scanned, setScanned] = useState(false);
 
   useEffect(() => {

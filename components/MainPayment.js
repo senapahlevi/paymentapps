@@ -24,7 +24,7 @@ function BottomMenu() {
       name="Home"
       component = {HomeScreen}
       options = {{
-        tabBarLabel :'Home',
+        tabBarLabel :'Baghdad',
         tabBarIcon :({color})=> (
           <MaterialCommunityIcons name = "home" color={color} size={26}/>
         ),

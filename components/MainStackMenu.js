@@ -7,14 +7,14 @@ import PersonalScreen from './PersonalScreen';
 import RegisterScreen from './RegisterScreen';
 import {QrCode,KonfirmasiBayar,Paymentinfo} from '../buttonstack/QrCode';
 import MainPayment from './MainPayment';
-import { TopUpBerhasil,TopUp } from "./TopUpScreen";
+import { TopUpBerhasil,TopUp } from "./SearchBar";
 import  {Transfer,TransferBerhasil} from './TransferScreen';
 
 const Stack = createStackNavigator();
  /*<Stack.Screen
               name ="QRPay"
               component = {QrCode}
-              />
+              /> 
               */
 const MainStackMenu = () =>{
     return(
@@ -27,7 +27,7 @@ const MainStackMenu = () =>{
               name ="Register"
               component = {RegisterScreen}
               /> 
-            <Stack.Screen
+           <Stack.Screen
               name ="Home"
               component = {MainPayment}
               />

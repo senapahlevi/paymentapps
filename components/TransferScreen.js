@@ -14,6 +14,7 @@ const Transfer = () => {
                 <Image 
                     source = {require('../assets/konfbayar.png')}/>
             </View>
+            
             <View style = {styles.containerContent}>
                 <TextInput
                     style = {styles.textInputPrimary}
